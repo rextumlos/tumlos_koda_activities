@@ -6,16 +6,21 @@
 arr = [1, 1, 2, 3, 2, 2, 3]
 
 # SOLUTION
-duplicates = Array.new
+def num_of_duplicates(arr)
+  duplicates = Array.new
 
-arr.each_with_index do |num1, index1|
-  arr.each_with_index do |num2, index2|
-    if index1 != index2
-      if num1 == num2 and !duplicates.include?(num2)
-        duplicates << num1
+  arr.each_with_index do |num1, index1|
+    arr.each_with_index do |num2, index2|
+      if index1 != index2
+        if num1 == num2 and !duplicates.include?(num2)
+          duplicates << num1
+        end
       end
     end
   end
+
+  duplicates.length
 end
 
-print "Total number of duplicates: #{duplicates.length}"
+
+print "Total number of duplicates: #{num_of_duplicates(arr)}"
