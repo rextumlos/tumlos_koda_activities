@@ -10,4 +10,4 @@ def lengthOfLastWord(input)
   puts "The last word is \"#{str_array[-1]}\" with length #{str_array[-1].length}."
 end
 
-lengthOfLastWord(input_2
+lengthOfLastWord(input_2)
