@@ -1,9 +1,6 @@
 # John Rexpearl Tumlos
 # Exercise 6 - Remove duplicates from Sorted Array
 
-input_1 = [1, 1, 2]
-input_2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-
 def removeDuplicates(nums)
   filtered_arr = Array.new
   nums.each do |num|
@@ -19,5 +16,8 @@ def removeDuplicates(nums)
 
   "#{k}, #{filtered_arr}"
 end
+
+input_1 = [1, 1, 2]
+input_2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 
 print removeDuplicates(input_2)
