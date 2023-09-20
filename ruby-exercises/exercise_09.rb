@@ -1,9 +1,6 @@
 # John Rexpearl Tumlos
 # Exercise 9 - Best Time to Buy and Sell Stock
 
-input_1 = [7, 1, 5, 3, 6, 4]
-input_2 = [7, 6, 4, 3, 1]
-
 def maxProfit(prices)
   low_price = nil
   high_price = nil
@@ -29,5 +26,9 @@ def maxProfit(prices)
   profit = high_price - low_price
   profit < 0 ? 0 : profit
 end
+
+
+input_1 = [7, 1, 5, 3, 6, 4]
+input_2 = [7, 6, 4, 3, 1]
 
 print maxProfit(input_2)
