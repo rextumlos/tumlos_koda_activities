@@ -1,10 +1,5 @@
 # John Rexpearl Tumlos
 # Exercise 3: Longest Common Prefix
-
-input_1 = ["flower","flow","flight"]
-input_2 = ["dog","racecar","car"]
-input_3 = ["rrx", "rrxf", "rrxdex", "rrxas"]
-
 def longestCommonPrefix(array)
   base_word_array = array.pop.split("")
   str_match = Array.new
@@ -23,5 +18,10 @@ def longestCommonPrefix(array)
 
   str_match.join("")
 end
+
+
+input_1 = ["flower","flow","flight"]
+input_2 = ["dog","racecar","car"]
+input_3 = ["rrx", "rrxf", "rrxdex", "rrxas"]
 
 puts longestCommonPrefix(input_3)
