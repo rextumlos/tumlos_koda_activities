@@ -2,10 +2,6 @@
 # Exercise 4: Single Number
 # Each values have duplicates, find the unique one
 
-input_1 = [2, 2, 1]
-input_2 = [4, 1, 2, 1, 2]
-input_3 = [1]
-
 def singleNumber(nums)
   nums.each_with_index do |num1, index1|
     nums.each_with_index do |num2, index2|
@@ -19,5 +15,9 @@ def singleNumber(nums)
 
   print nums[0]
 end
+
+input_1 = [2, 2, 1]
+input_2 = [4, 1, 2, 1, 2]
+input_3 = [1]
 
 singleNumber(input_2)
