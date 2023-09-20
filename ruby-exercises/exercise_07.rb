@@ -3,10 +3,6 @@
 
 # I created this code like solving a fibonacci sequence as we are only getting the total steps because I saw a resemblance of it.
 
-input_1 = 2
-input_2 = 3
-input_3 = 4
-
 # n = 5
 # [
 #   [1, 1, 1, 1, 1],
@@ -40,5 +36,9 @@ def climbStairs(n)
 
   result[-1]
 end
+
+input_1 = 2
+input_2 = 3
+input_3 = 4
 
 print climbStairs(input_3)
